@@ -1,0 +1,7 @@
+.text-box {
+  display: inline-block;
+  border: 1px solid black;
+  height: 20px;
+  min-width: 120px;
+  overflow: hidden;
+  cursor: text; }

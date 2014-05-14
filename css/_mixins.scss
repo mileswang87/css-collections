@@ -1,0 +1,22 @@
+$blue: blue;
+$white: #ffffff;
+
+@mixin button($button-color:$white) {
+  display: inline-block;
+  line-height: 150%;
+  padding: 4px 10px;
+  background-color: $button-color;
+  color: #ffffff - $button-color;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@mixin text-box(){
+  display: inline-block;
+  border: 1px solid black;
+  height: 20px;
+  min-width: 120px;
+  overflow: hidden;
+  cursor: text;
+}
