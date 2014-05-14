@@ -1,2 +1,2 @@
 # example
-collection of some useful css ticks
+collection of some useful css tricks
