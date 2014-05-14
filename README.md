@@ -1,2 +1,2 @@
 # example
-collection of some useful plugins
+collection of some useful css plugins
