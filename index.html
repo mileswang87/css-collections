@@ -6,12 +6,18 @@
     <link rel="stylesheet" type="text/css" href="css/file-input.css">
 </head>
 <body>
-<div class="file-input">
-    <input type="file" onchange="fileOnChange(this);">
-    Button
+<div class="demo" id="file-input-demo">
+    <div class="file-input">
+        <input type="file" onchange="fileOnChange(this);">
+        Button
+    </div>
+    <label for="file-input-info"></label><input type="text" class="text-box" id="file-input-info" disabled>
 </div>
-<input type="text" class="text-box" id="file-input-info" disabled>
-
+<div class="demo" id="simple-button-demo">
+    <a href="#" class="simple-button">button1</a>
+    <button class="simple-button">button2</button>
+    <a href="#" class="simple-button">button3</a>
+</div>
 <script src="js/file-input.js"></script>
 </body>
 </html>

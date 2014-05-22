@@ -1,3 +1,7 @@
+body {
+  width: 960px;
+  margin: auto; }
+
 .text-box {
   display: inline-block;
   border: 1px solid black;
@@ -5,3 +9,38 @@
   min-width: 120px;
   overflow: hidden;
   cursor: text; }
+
+.simple-button {
+  font-family: sans-serif;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  color: #0f2540;
+  cursor: pointer;
+  text-decoration: none; }
+  .simple-button:visited {
+    color: #0f2540; }
+  .simple-button:after {
+    display: block;
+    content: " ";
+    width: 90%;
+    border-bottom: 2px solid #0f2540;
+    position: absolute;
+    left: 5%; }
+  .simple-button:hover:after {
+    border-bottom-color: #2ea9df; }
+
+.demo {
+  margin: 20px 0 20px 0;
+  border-bottom: 1px solid black;
+  padding: 20px 0 20px 0; }
+  .demo:before {
+    content: "Demo:";
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 800; }

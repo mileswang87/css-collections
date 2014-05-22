@@ -1,6 +1,13 @@
 $blue: blue;
 $white: #ffffff;
 
+$color-bamboo-green: #00896C;
+$color-light-green: #24936E;
+$color-white-green: #A8D8B9;
+
+$color-dark-blue: #0f2540;
+$color-lite-blue: #2ea9df;
+
 @mixin button($button-color:$white) {
   display: inline-block;
   line-height: 150%;
@@ -19,4 +26,38 @@ $white: #ffffff;
   min-width: 120px;
   overflow: hidden;
   cursor: text;
+}
+
+
+@mixin simple-button {
+  $color: $color-dark-blue;
+  $hover-color: $color-lite-blue;
+// reset button css
+  font-family: sans-serif;
+  border:0 none;
+  margin:0;
+  padding:0;
+  background:transparent;
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  color: $color;
+  cursor: pointer;
+  text-decoration: none;
+  &:visited {
+    color: $color;
+  }
+  &:after {
+    display: block;
+    content: " ";
+    width: 90%;
+    border-bottom: 2px solid $color;
+    position: absolute; left: 5%;
+  }
+  &:hover {
+    &:after {
+      border-bottom-color: $hover-color;
+    }
+  }
 }
